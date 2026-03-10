@@ -1,5 +1,16 @@
 # Programming II Portfolio | Ethan Tang | Contact Info: epvnrt2.26@gmail.com 
 
+## Projects for Second Semester
+
+### Daoist Pharmaceutical 
+
+**Description:** This project is a game in which the user plays as the son of the Jade Emperor who is tasked with curing diseases in Asia. The user will collect medicines and build pharmacies to distribute traditional chinese medicines in order to cure diseases and will lose once the player's reputation drops below a certain threshold. Most in-game objects are randomly generated and the game can theoretically be played indefinitely. As for my personal contribution, I created the main file, the overall framework for the game and the behavior of the disease class. 
+
+![gameplay](https://github.com/9674036-code/Portfolio/blob/main/images/DaoistPharagame.png?raw=true)
+
+**Link To Repository:**
+[Daoist Pharma](https://github.com/Kai535813/--Daoist-Pharmaceutical)
+
 # Programming I Portfolio | Ethan Tang | Contact Info: epvnrt2.26@gmail.com
 
 ## Certifications:
