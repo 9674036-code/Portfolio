@@ -9,7 +9,7 @@
 ![gameplay](https://github.com/9674036-code/Portfolio/blob/main/images/DaoistPharagame.png?raw=true)
 
 **Link To Repository:**
-[Daoist Pharma](https://github.com/Kai535813/--Daoist-Pharmaceutical)
+[Daoist Pharmaceutical](https://github.com/Kai535813/--Daoist-Pharmaceutical)
 
 # Programming I Portfolio | Ethan Tang | Contact Info: epvnrt2.26@gmail.com
 
