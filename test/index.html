@@ -31,6 +31,17 @@
       width: 960px; height: auto;
       
     }
+
+    .image-container {
+      display: flex; 
+      gap: 10px;          
+    }
+
+    .image-container img {
+      width: 50%;         
+      height: auto;        
+    }
+
     header {
       /* Styles the header section */
       height: 20%;
@@ -84,7 +95,7 @@
     }
     main img {
       /* Styles content images */
-      max-width: 100%;
+      width: 50%;
       height: auto;
       display: block;
     }
@@ -148,17 +159,20 @@
         <!-- <main> for main content. Replace or add text, images, lists, etc. -->
       <main>
           <h2>About My Work</h2>
-          <p>I am a developer specializing in building clean, efficient not readabe web applications.</p>
+          <p>Hello, my name is Ethan Tang, I mainly program in python but have experince in the Processing enviornment.</p>
           
+          <h3><strong>Email:</strong> <a href="mailto:epvnrt2.26@gmail.com">epvnrt2.26@gmail.com </a> </h3>
+
           <h3>Recent Projects</h3>
-          <p>Check out some of the things I've built lately.</p>
-          
-          <h3>Skills & Tools</h3>
-          <ul>
-              <li>Python & JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>Data Analysis</li>
-          </ul>
+          <h4>Qubit Solver(2026)</h4>
+          <p>The Qubit Solver is an application in which the user is tasked with performing <strong> state reconstruction </strong> on a mystery qubit by using various quantum gates, and computational basis measurments for the mystery qubit. The application is designed to <strong> educate users about fundamental quantum computing concepts </strong> and can be used to test intuition regarding quantum computing. The program is built using <strong> OOP principles </strong> and uses <strong> numpy vectors and matricies </strong> in order to <strong> mathematically simulate quantum information </strong> .<p>
+          <div class="image-container">
+            <img src="https://github.com/9674036-code/Portfolio/blob/main/images/QubitSolverStart.png?raw=true" alt="Qubit Solver Image">
+            <img src="https://github.com/9674036-code/Portfolio/blob/main/images/QubitSolver.png?raw=true" alt="Qubit Solver Image">
+          </div>
+          <a href="https://github.com/9674036-code/EthanTangCP2SoloProject/tree/main/src/QubitSolver" target="_blank">Source Code</a><br>
+          <a href="https://github.com/9674036-code/EthanTangCP2SoloProject/tree/main" target="_blank"> Project Repository, read the readme file for further instructions on usage</a>
+
       </main>
         <!-- <footer> for copyright or contact info (edit the text) -->
         <footer>
