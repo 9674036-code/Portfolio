@@ -31,23 +31,28 @@
       width: 960px; height: auto;
       
     }
-  .center-link {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-    overflow: hidden;
-  }
+    .center-link {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;      
+      overflow: hidden;  
+      border-radius: 8px;      
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-  .center-link img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
+    /* Sets up the image parameters and smooth hover configuration */
+    .center-link img {
+      display: block;
+      max-width: 100%;   
+      height: auto;
+      transition: transform 0.3s ease;
+      cursor: pointer;         
+    }
 
-  .center-link:hover img {
-    transform: scale(1.05);
-  }
+    /* Triggers the zoom animation on user hover */
+    .center-link:hover img {
+      transform: scale(1.05);
+    }
 
     header {
       /* Styles the header section */
