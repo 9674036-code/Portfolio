@@ -42,6 +42,13 @@
       height: auto;        
     }
 
+    .center-image{
+      display:block
+      margin-left: auto
+      margin-right: auto
+      width:50%
+    }
+
     header {
       /* Styles the header section */
       height: 20%;
@@ -153,8 +160,8 @@
         </header>
         <!-- <nav> for navigation links (edit or add <a> tags) -->
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="index.html">About</a>
+            <a href="Programming.html">Programming</a>
         </nav>
         <!-- <main> for main content. Replace or add text, images, lists, etc. -->
       <main>
@@ -164,76 +171,20 @@
           <h3><strong>Email:</strong> <a href="mailto:epvnrt2.26@gmail.com">epvnrt2.26@gmail.com </a> </h3>
           <h3><strong>Certifications:</strong>
               <a href="https://github.com/9674036-code/Portfolio/blob/main/images/Ethan%20Tang%20Computer%20Programming%201%20Certificate.pdf" target="_blank">
-                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/CP1Certification.png?raw=true" alt="CP1Certification">
+                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/CP1Certification.png?raw=true" alt="CP1Certification" class="center-image">
               </a>
               <a href="https://github.com/9674036-code/Portfolio/blob/main/docs/Ethan%20Tang_Computer%20Programming%202%20Python_05142026.pdf" target="_blank">
-                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/PythonCertification.png?raw=true" alt="PythonCertification">
+                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/PythonCertification.png?raw=true" alt="PythonCertification" class="center-image">>
               </a>
               <a href="https://github.com/9674036-code/Portfolio/blob/main/docs/Ethan%20Tang_Computer%20Programming%202%20Java%20_05152026.pdf" target="_blank">
-                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/JavaCertification.png?raw=true" alt="JavaCertification">
+                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/JavaCertification.png?raw=true" alt="JavaCertification" class="center-image">>
               </a>
               <a href="https://github.com/9674036-code/Portfolio/blob/main/docs/Ethan%20Tang_Computer%20Programming%202%20C%23_05192026.pdf" target="_blank">
-                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/C%23Certification.png?raw=true" alt="C#Certification">
+                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/C%23Certification.png?raw=true" alt="C#Certification" class="center-image">>
               </a>
               <a href="https://github.com/9674036-code/Portfolio/blob/main/docs/Ethan%20Tang_Computer%20Programming%202%20C%2B%2B_05212026.pdf" target="_blank">
-                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/C++Certification.png?raw=true" alt="C++Certification">
+                  <img src="https://github.com/9674036-code/Portfolio/blob/main/images/C++Certification.png?raw=true" alt="C++Certification" class="center-image">>
               </a>
-
-          <h3>Recent Projects</h3>
-          <h4>Qubit Solver(2026)</h4>
-          <p>The Qubit Solver is an application in which the user is tasked with performing <strong> state reconstruction </strong> on a mystery qubit by using various quantum gates, and computational basis measurments for the mystery qubit. The application is designed to <strong> educate users about fundamental quantum computing concepts </strong> and can be used to test intuition regarding quantum computing. The program is built using <strong> OOP principles </strong> and uses <strong> numpy vectors and matricies </strong> in order to <strong> mathematically simulate quantum information </strong> .<p>
-          <div class="image-container">
-            <img src="https://github.com/9674036-code/Portfolio/blob/main/images/QubitSolverStart.png?raw=true" alt="Qubit Solver Image">
-            <img src="https://github.com/9674036-code/Portfolio/blob/main/images/QubitSolver.png?raw=true" alt="Qubit Solver Image">
-          </div>
-          <a href="https://github.com/9674036-code/EthanTangCP2SoloProject/tree/main/src/QubitSolver" target="_blank">Source Code</a><br>
-          <a href="https://github.com/9674036-code/EthanTangCP2SoloProject/tree/main" target="_blank"> Project Repository, read the readme file for further instructions on usage</a>
-
-          <h4>Daoist Pharmaceutical(2026)</h4>
-          <p>This project was a group effort and is a game in which the user plays as the son of the Jade Emperor who is tasked with curing diseases in Asia. The user will collect medicines and build pharmacies to distribute traditional chinese medicines in order to cure diseases and will lose once the player's reputation drops below a certain threshold. The project is built using <strong>OOP principles</strong> Most in-game objects are randomly generated and the game can theoretically be played indefinitely.<p>
-          <div class="image-container">
-            <img src="https://github.com/9674036-code/Portfolio/blob/main/images/DaoistStart.png?raw=true" alt="Daoist Image">
-            <img src="https://github.com/9674036-code/Portfolio/raw/main/images/DaoistPharagame.png?raw=true" alt="Daoist Image">
-          </div>
-          <a href="https://github.com/Kai535813/--Daoist-Pharmaceutical/tree/main/src/Daoist%20Pharmaceutical" target="_blank">Source Code</a><br>
-          <a href="https://github.com/Kai535813/--Daoist-Pharmaceutical/tree/main" target="_blank"> Project Repository, read the readme file for further instructions on usage</a>
-          
-          <h4>MusikHelfer(2025)</h4>
-          <p>This project was a group effort designed in the <strong> Processing Enviornment </strong> and a music application with four main utilites: an Interval Ear Training Page, Tuner, Harmonizer and Metronome. The project uses the <strong>proccessing sound library</strong> in order to play a variety of pitches through piano sound files. The Interval Ear Training Page selects a random interval and scale degree and plays the interval. The user has to then guess the interval using an <strong>array</strong> of buttons and the program will respond with an indication of a correct or incorrect answer. The Tuner plays any given pitch based on user input through an array of buttons. The Harmonizer page is able to return a chord that harmonizes any given melody that the user inputs using a displayed score and the note class. The metronome repeatedly plays a sound file based on the frequency determined through user input. All of these pages are seperated and contained within their <strong>respective methods</strong> in the main file and converge within the <strong>mouseReleased and draw methods</strong>.<p>
-          <div class="image-container">
-            <img src="https://github.com/Kai535813/Musikhelfer/raw/main/images/Musik%20Helfer%20Start%20Screen.png?raw=true" alt="MusikHelfer Image">
-            <img src="https://github.com/Kai535813/Musikhelfer/blob/main/images/Harmonizer.png?raw=true" alt="MusikHelfer Image">
-          </div>
-          <a href="https://github.com/Kai535813/Musikhelfer/tree/main/src/Musikhelfer" target="_blank">Source Code</a><br>
-          <a href="https://github.com/Kai535813/Musikhelfer" target="_blank"> Project Repository, read the readme file for further instructions on usage</a>
-
-          <h4>Graphing Calculator(2025)</h4>
-          <p>This project implements a multi-functional graphical calculator using the <strong>Processing envrionment</strong> and is structured around <strong>button-driven UI logic</strong> and <strong>custom arithmetic parsing</strong>, offering a foundation for a math education tool or calculator app. It supports <strong>standard arithmetic calculations</strong>, <strong>graphing mathematical expressions</strong> with <strong>respect to variable x</strong>, <strong>custom graph window scaling</strong> and <strong>advanced mathematical functions</strong> like logarithm, square root, and exponents. The program features an <strong>interactive GUI</strong> composed of buttons for digits, operations, commands, and graphing utilities, rendered in a clean layout with <strong>hover and click detection</strong>.</p>
-          <p><strong>Usage Notes: </strong> When using the "log" function, the base of the function is to be placed in front the log function and the number being operated on after the log function. The "√" function represents the square root function specifically, and only needs one number after it to function. In order to activate the calculator's graphing mode, this can be activated by using the Graph button and also disabled by using the Graph button again. Once the calculator is in its graphing mode, the graph will be displayed after a given expression is input and can then be graphed by pressing the EXE button. The green "x" button represents the input for the variable x and is exclusive to the calculator's graphing mode. The graphing window can then be disabled by pressing the EXE button again. All expressions must be expanded, for example, 3x will expressed as 3Xx, excluding negatives. In order to adjust the window of the graphing display, press the "Window" button and input the ranges of the x and y axis by using the calculators normal inputs and use EXE to alternate from the x range to y range and press it once again to verify the changes. Similarly, this display can also be disabled by pressing the "Window" button once again, although any changes will not be saved without pressing EXE twice before displaying the window. Also, the window will automatically disable after pressing EXE twice. The x and y ranges that the calculator assumes before one changes them is set as 20.</p>
-          <div class="image-container">
-            <img src="https://github.com/9674036-code/portfolio/raw/main/images/Calculator%20Image.png?raw=true" alt="Calculator Image">
-          </div>
-          <a href="https://github.com/9674036-code/Portfolio/tree/main/src/Calculator" target="_blank">Source Code</a><br>
-          
-          <h4>ShapeTester(2026)</h4>
-          <p>This project was a group effort and is a game in which the user plays as the son of the Jade Emperor who is tasked with curing diseases in Asia. The user will collect medicines and build pharmacies to distribute traditional chinese medicines in order to cure diseases and will lose once the player's reputation drops below a certain threshold. The project is built using <strong>OOP principles</strong> Most in-game objects are randomly generated and the game can theoretically be played indefinitely.<p>
-          <div class="image-container">
-            <img src="https://github.com/9674036-code/Portfolio/blob/main/images/DaoistStart.png?raw=true" alt="Daoist Image">
-            <img src="https://github.com/9674036-code/Portfolio/raw/main/images/DaoistPharagame.png?raw=true" alt="Daoist Image">
-          </div>
-          <a href="https://github.com/Kai535813/--Daoist-Pharmaceutical/tree/main/src/Daoist%20Pharmaceutical" target="_blank">Source Code</a><br>
-          <a href="https://github.com/Kai535813/--Daoist-Pharmaceutical/tree/main" target="_blank"> Project Repository, read the readme file for further instructions on usage</a>
-          
-          <h4>Murder Mystery MadLibs(2026)</h4>
-          <p>This project was a group effort designed in the <strong> Processing Enviornment </strong> and a music application with four main utilites: an Interval Ear Training Page, Tuner, Harmonizer and Metronome. The project uses the <strong>proccessing sound library</strong> in order to play a variety of pitches through piano sound files. The Interval Ear Training Page selects a random interval and scale degree and plays the interval. The user has to then guess the interval using an <strong>array</strong> of buttons and the program will respond with an indication of a correct or incorrect answer. The Tuner plays any given pitch based on user input through an array of buttons. The Harmonizer page is able to return a chord that harmonizes any given melody that the user inputs using a displayed score and the note class. The metronome repeatedly plays a sound file based on the frequency determined through user input. All of these pages are seperated and contained within their <strong>respective methods</strong> in the main file and converge within the <strong>mouseReleased and draw methods</strong>.<p>
-          <div class="image-container">
-            <img src="https://github.com/Kai535813/Musikhelfer/raw/main/images/Musik%20Helfer%20Start%20Screen.png?raw=true" alt="MusikHelfer Image">
-            <img src="https://github.com/Kai535813/Musikhelfer/blob/main/images/Harmonizer.png?raw=true" alt="MusikHelfer Image">
-          </div>
-          <a href="https://github.com/Mo59471/Murder_Mystery_Mad_Libs/tree/main/src/MadLibs" target="_blank">Source Code</a><br>
-          <a href="https://github.com/Mo59471/Murder_Mystery_Mad_Libs/tree/main" target="_blank"> Project Repository, read the readme file for further instructions on usage</a>
-
-       
         </main>
         <!-- <footer> for copyright or contact info (edit the text) -->
         <footer>
