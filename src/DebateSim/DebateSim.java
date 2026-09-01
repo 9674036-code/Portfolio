@@ -65,11 +65,11 @@ public class DebateSim {
                 }
                 
                 System.out.println("Judge importance ratings (out of 100)");
-                System.out.println("The main arguments/impact calc:" +judge.get(0));
+                System.out.println("The main arguments/impact calc :" +judge.get(0));
                 System.out.println("The value debate: " +judge.get(1));
                 System.out.println("Cross Examination: " +judge.get(2));
 
-                if((player.getCrossX()*judge.get(2)+player.getMainArg()*judge.get(0)+player.getValue()*judge.get(1))>(opp.getCrossX()*judge.get(2)+opp.getMainArg()*judge.get(0)+opp.getValue()*judge.get(1))){
+                if((Math.abs(player.getCrossX()/judge.get(2)-1)+Math.abs(player.getMainArg()/judge.get(0)-1)+Math.abs(player.getValue()/judge.get(1)-1))<(Math.abs(opp.getCrossX()/judge.get(2)-1)+Math.abs(opp.getMainArg()/judge.get(0)-1)+Math.abs(opp.getValue()/judge.get(1)-1))){
                     System.out.println("You have won the round.");
                     player.setWins(1);
                 }else{
@@ -93,8 +93,7 @@ public class DebateSim {
             input.close();
             break;
         }
-
+        player.reset();
         }
-
     }
 }
