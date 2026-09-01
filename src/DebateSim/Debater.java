@@ -4,10 +4,11 @@ public class Debater{
     private int mainArg=0;
     private int value=0;
     private int crossX=0;
-    private int speakerI=0;
 
-    public void setSpeakerI(int speakerI) {
-        this.speakerI = speakerI;
+    
+    public void reset(){
+        speakerP=0;
+        wins=0;
     }
     public void setCrossX(int crossX) {
         this.crossX = crossX;
@@ -38,8 +39,5 @@ public class Debater{
     }
     public int getWins() {
         return wins;
-    }
-    public int getSpeakerI() {
-        return speakerI;
     }
 }
