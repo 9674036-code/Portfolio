@@ -1,6 +1,6 @@
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class DebateSim {
     public static String paradigm="Hello, if you are reading this, I am probably your judge, here's what I'm looking for: ";
@@ -13,7 +13,7 @@ public class DebateSim {
     public static Debater opp = new Debater();
     public static void main(String[] args) {
         while (true){
-            for (int r=0;r<1;r++){
+            for (int r=0;r<5;r++){
                 judge.add(random.nextInt(60)+10);
                 opp.setMainArg(judge.get(0)+random.nextInt(18)-8);
                 if(judge.get(0)>31){
@@ -79,15 +79,17 @@ public class DebateSim {
                 judge.clear();
                 paradigm="Hello, if you are reading this, I am probably your judge, here's what I'm looking for: ";
             }
-        if (player.getWins()==4){
-            System.out.println("You placed "+random.nextInt(2)+4+"th");
-        }else if (player.getWins()==5){
-            System.out.println("You placed"+random.nextInt(3)+1+"th");
-        }else{
-            System.out.println("You did not place.");
+        switch(player.getWins()){
+            case 4:
+                System.out.println("You placed "+random.nextInt(2)+4+"th");
+            case 5:
+                System.out.println("You placed"+random.nextInt(3)+1+"th");
+            default:
+                System.out.println("You did not place.");
         }
+
         System.out.println("Do you want to play again? yes/no ");
-        if(input.nextLine()!="yes"){
+        if(input.nextLine().equals("yes")){
             input.close();
             break;
         }
