@@ -1,6 +1,12 @@
 public class SVDebater extends Debater{
     public static final int SPEAKER_I=80;
+    public SVDebater(int w,int p) {
+        setMod(27);
+        setWins(w);
+        setSpeakerP(p);
+    }
+    @Override
     public void addPerks(){
-        setValue(getValue()+6);
+        setValue(getValue()+getMod());
     }
 }
