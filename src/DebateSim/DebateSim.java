@@ -69,7 +69,7 @@ public class DebateSim {
                 System.out.println("The value debate: " +judge.get(1));
                 System.out.println("Cross Examination: " +judge.get(2));
 
-                if((Math.abs(player.getCrossX()/judge.get(2)-1)+Math.abs(player.getMainArg()/judge.get(0)-1)+Math.abs(player.getValue()/judge.get(1)-1))<(Math.abs(opp.getCrossX()/judge.get(2)-1)+Math.abs(opp.getMainArg()/judge.get(0)-1)+Math.abs(opp.getValue()/judge.get(1)-1))){
+                if(effectCalc(player.getCrossX(),judge.get(2)+effectCalc(player.getMainArg(),judge.get(0))+effectCalc(player.getValue(),judge.get(1)))<effectCalc(opp.getCrossX(),judge.get(2))+effectCalc(opp.getMainArg(),judge.get(0))+effectCalc(opp.getValue(),judge.get(1))){
                     System.out.println("You have won the round.");
                     player.setWins(1);
                 }else{
@@ -95,5 +95,8 @@ public class DebateSim {
         }
         player.reset();
         }
+    }
+    public static int effectCalc(int j, int p){
+        return (j*p)*(Math.abs(p/j-1)+1);
     }
 }
