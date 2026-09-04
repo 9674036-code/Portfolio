@@ -11,7 +11,11 @@ public class DebateSim {
     public static String[] value={"The value debate is pretty fundamental but not really extensive so I'll be a judging a bit of the round on it.","The value debate is quite fundamental so I'll weigh it considerably.","Sure impact calc is important, but the value debate is cool so I will weigh most of the round on it."};
     public static ArrayList<Debater> player = new ArrayList<>();
     int playerType=0;
-    player.add(new ExtinctionDebater(0,0));
+    static{
+        player.add(new ExtinctionDebater(0,0));
+        player.add(new ProgDebater(0,0));
+        player.add(new SVDebater(0,0));
+    }
 
     public static Debater opp = new ExtinctionDebater(0,0);
     public static void main(String[] args) {
